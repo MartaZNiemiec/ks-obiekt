@@ -21,10 +21,10 @@ class UzytkownikMenadzer
     int pobierzIdNowegoUzytkownika();
     bool czyIstniejeLogin(string login);
 
-
 public:
     void rejestracjaUzytkownika();
     void wypiszWszystkichUzytkownikow();
+    void wczytajUzytkownikowZPliku();
 };
 
 #endif
