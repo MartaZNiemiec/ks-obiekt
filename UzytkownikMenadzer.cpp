@@ -1,10 +1,5 @@
 #include "UzytkownikMenadzer.h"
 
-/*UzytkownikMenadzer::UzytkownikMenadzer()
-{
-    idZalogowanegoUzytkownika = logowanieUzytkownika();
-}*/
-
 void UzytkownikMenadzer::rejestracjaUzytkownika()
 {
     Uzytkownik uzytkownik = podajDaneNowegoUzytkownika();

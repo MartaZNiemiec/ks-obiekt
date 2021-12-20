@@ -22,7 +22,6 @@ class UzytkownikMenadzer
     bool czyIstniejeLogin(string login);
 
 public:
-    //void ustawIdZalogowanegoUzytkownika(int noweIdZalogowanegoUzytkownika);
     int pobierzIdZalogowanegoUzytkownika();
 
     UzytkownikMenadzer(string nazwaPlikuZUzytkownikami) : plikZUzytkownikami(nazwaPlikuZUzytkownikami) {};
