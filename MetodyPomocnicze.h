@@ -15,8 +15,10 @@ public:
     static int konwersjaStringNaInt(string liczba);
     static string wczytajLinie();
     static string zamienPierwszaLitereNaDuzaAPozostaleNaMale(string tekst);
-    char wczytajZnak();
+    static char wczytajZnak();
     int wczytajLiczbeCalkowita();
+    static char wybierzOpcjeZMenuGlownego();
+    static char wybierzOpcjeZMenuUzytkownika();
 
 };
 
