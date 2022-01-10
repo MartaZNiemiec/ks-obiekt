@@ -33,6 +33,8 @@ public:
     bool czyUzytkownikJestZalogowany();
     int dodajAdresata();
     void wyswietlWszystkichAdresatow();
+    char wybierzOpcjeZMenuGlownego();
+    char wybierzOpcjeZMenuUzytkownika();
 
 };
 

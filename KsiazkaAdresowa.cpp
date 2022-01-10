@@ -62,6 +62,16 @@ void KsiazkaAdresowa::wyswietlWszystkichAdresatow()
     }
 }
 
+char KsiazkaAdresowa::wybierzOpcjeZMenuGlownego()
+{
+    MetodyPomocnicze::wybierzOpcjeZMenuGlownego();
+}
+
+char KsiazkaAdresowa::wybierzOpcjeZMenuUzytkownika()
+{
+    MetodyPomocnicze::wybierzOpcjeZMenuUzytkownika();
+}
+
 
 
 
