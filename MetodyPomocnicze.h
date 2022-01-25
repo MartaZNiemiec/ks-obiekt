@@ -16,10 +16,10 @@ public:
     static string wczytajLinie();
     static string zamienPierwszaLitereNaDuzaAPozostaleNaMale(string tekst);
     static char wczytajZnak();
-    int wczytajLiczbeCalkowita();
+    static int wczytajLiczbeCalkowita();
     static char wybierzOpcjeZMenuGlownego();
     static char wybierzOpcjeZMenuUzytkownika();
-
+    static char wybierzOpcjeZMenuEdycja();
 };
 
 #endif
