@@ -23,7 +23,7 @@ public:
     int pobierzIdZalogowanegoUzytkownika();
     int pobierzIdNowegoUzytkownika();
 
-    UzytkownikMenadzer(string nazwaPlikuZUzytkownikami) : plikZUzytkownikami(nazwaPlikuZUzytkownikami) {
+    UzytkownikMenadzer(string nazwaPliku) : plikZUzytkownikami(nazwaPliku) {
         idZalogowanegoUzytkownika = 0;
         uzytkownicy = plikZUzytkownikami.wczytajUzytkownikowZPliku();
     };

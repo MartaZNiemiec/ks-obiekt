@@ -22,8 +22,8 @@ class AdresatMenadzer
     void wyswietlIloscWyszukanychAdresatow(int iloscAdresatow);
 
 public:
-    AdresatMenadzer(string nazwaPlikuZAdresatami, string nazwaTymczasowegoPlikuZAdresatami, int idZalogowanegoUzytkownika)
-        : plikZAdresatami(nazwaPlikuZAdresatami, nazwaTymczasowegoPlikuZAdresatami),
+    AdresatMenadzer(string nazwaPliku, int idZalogowanegoUzytkownika)
+        : plikZAdresatami(nazwaPliku),
         ID_ZALOGOWANEGO_UZYTKOWNIKA(idZalogowanegoUzytkownika)
         {
             adresaci = plikZAdresatami.wczytajAdresatowZalogowanegoUzytkownikaZPliku(ID_ZALOGOWANEGO_UZYTKOWNIKA);
