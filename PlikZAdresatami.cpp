@@ -262,11 +262,12 @@ int PlikZAdresatami::zwrocNumerLiniiSzukanegoAdresata(int idAdresata)
 void PlikZAdresatami::edytujWybranegoAdresataWPliku(int idEdytowanegoAdresata, string liniaZDanymiAdresataOddzielonePionowymiKreskami)
 {
     fstream odczytywanyPlikTekstowy, tymczasowyPlikTekstowy;
+    string nazwaTymczasowegoPlikuZAdresatami = "Adresaci_tymczasowo.txt";
     string daneJednegoAdresataOddzielonePionowymiKreskami = "";
     int idAdresataZPliku = 0;
 
     odczytywanyPlikTekstowy.open(pobierzNazwePliku().c_str(), ios::in);
-    tymczasowyPlikTekstowy.open(pobierzNazwePliku().c_str(), ios::out | ios::app);
+    tymczasowyPlikTekstowy.open(nazwaTymczasowegoPlikuZAdresatami.c_str(), ios::out | ios::app);
 
     if (odczytywanyPlikTekstowy.good() == true)
     {
@@ -292,7 +293,7 @@ void PlikZAdresatami::edytujWybranegoAdresataWPliku(int idEdytowanegoAdresata, s
         tymczasowyPlikTekstowy.close();
 
         usunPlik(pobierzNazwePliku());
-        zmienNazwePliku(pobierzNazwePliku(), pobierzNazwePliku());
+        zmienNazwePliku(nazwaTymczasowegoPlikuZAdresatami, pobierzNazwePliku());
     }
 }
 
