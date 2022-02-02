@@ -15,6 +15,7 @@ bool PlikTekstowy::czyPlikJestPusty()
         if (plikTekstowy.tellg() == 0)
             pusty = true;
 
+        else pusty = false;
 
     plikTekstowy.close();
 
